@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id= "ao" class="com.jlcindia.spring.A">
+	   <property name="a" value="10"/>
+	   <property name="msg" value="ravi"/>
+   </bean>
+   
+   <bean id="aobj" class="com.jlcindia.spring.B">
+	   <constructor-arg value="20"/>
+	   <constructor-arg value="Chandola"/>	
+   </bean>
+     
+     <bean id="b01" class="com.jlcindia.spring.B">
+	   <constructor-arg value="30"/>
+	   <constructor-arg value="Hacker"/>	
+   </bean>
+   
+   <bean id="b02" class="com.jlcindia.spring.B">
+	   <constructor-arg value="40"/>
+	   <constructor-arg value="Illusion"/>	
+   </bean>
+     
+      
+  		 <bean id="hello" class="com.jlcindia.spring.Hello" autowire="constructor"/>  
+   
+   </beans>

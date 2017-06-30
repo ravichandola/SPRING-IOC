@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+	<bean id="aobj" class="com.jlcindia.spring.A" p:a="10" p:msg="Ravi"/>
+	<bean id="bobj" class="com.jlcindia.spring.B" p:b="20" p:str="Ravi Chandola"/>
+	
+	<bean id="hello" class="com.jlcindia.spring.Hello" p:aobj-ref="aobj" p:bobj-ref="bobj"/>
+   </beans>
